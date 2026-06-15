@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AKASH DAIRY FARM</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8fff5;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:linear-gradient(90deg,#0f9b0f,#00c853,#ffd700);
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:#fff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:#fff;
+text-decoration:none;
+font-weight:600;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url('https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:#fff;
+}
+
+.hero h1{
+font-size:65px;
+}
+
+.hero p{
+font-size:22px;
+margin:20px 0;
+}
+
+.btn{
+display:inline-block;
+padding:14px 35px;
+background:#ffd700;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:40px;
+}
+
+/* COMMON */
+
+section{
+padding:90px 10%;
+}
+
+.title{
+text-align:center;
+font-size:42px;
+margin-bottom:40px;
+color:#0f9b0f;
+}
+
+/* ABOUT */
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+}
+
+.about-text{
+font-size:18px;
+line-height:1.8;
+}
+
+/* PRODUCTS */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#fff;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+text-align:center;
+color:#0f9b0f;
+}
+
+/* FORM */
+
+.form-box{
+background:#fff;
+padding:25px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:10px;
+}
+
+button{
+background:#00c853;
+color:white;
+border:none;
+padding:12px 25px;
+border-radius:30px;
+cursor:pointer;
+}
+
+/* CONTACT */
+
+.contact-box{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+iframe{
+width:100%;
+height:400px;
+border:none;
+border-radius:15px;
+margin-top:20px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+width:65px;
+height:65px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:30px;
+text-decoration:none;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+@media(max-width:768px){
+
+.about{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">🥛 AKASH DAIRY FARM</div>
+
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#products">Selling</a></li>
+<li><a href="#feedback">Feedback</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>AKASH DAIRY FARM</h1>
+
+<p>
+Fresh Cow Milk • Buffalo Milk • Ghee • Dahi • Paneer • Hari Matar • Khova
+</p>
+
+<a href="#products" class="btn">View Products</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Us</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1605152276897-4f618f831968?auto=format&fit=crop&w=1200&q=80">
+
+<div class="about-text">
+
+<p>
+AKASH DAIRY FARM में शुद्ध एवं ताज़ा डेयरी उत्पाद उपलब्ध हैं।
+हम अपने ग्राहकों को गुणवत्ता और स्वच्छता के साथ दूध एवं डेयरी उत्पाद उपलब्ध कराते हैं।
+</p>
+
+<p>
+हमारे यहाँ Cow Milk, Buffalo Milk, Desi Ghee, Dahi, Paneer, Hari Matar तथा Khova उपलब्ध है।
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="products">
+
+<h2 class="title">Our Products</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=800&q=80">
+<h3>Cow Milk</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=800&q=80">
+<h3>Buffalo Milk</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?auto=format&fit=crop&w=800&q=80">
+<h3>Desi Ghee</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1571212515416-fca88c3d6cb2?auto=format&fit=crop&w=800&q=80">
+<h3>Dahi</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=80">
+<h3>Paneer</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80">
+<h3>Hari Matar</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80">
+<h3>Khova</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="feedback">
+
+<h2 class="title">Customer Feedback</h2>
+
+<div class="form-box">
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea rows="5" placeholder="Write Your Feedback"></textarea>
+
+<button>Submit Feedback</button>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact Us</h2>
+
+<div class="contact-box">
+
+<p><b>👤 Name:</b> AKASH DAIRY FARM</p>
+<p><b>📍 Address:</b> Rigwan Bara, Jasra, Prayagraj - 212107</p>
+<p><b>📞 Mobile:</b> 9956971362</p>
+<p><b>✉ Email:</b> akashyadavchhidi1234@gmail.com</p>
+
+<div class="form-box">
+
+<input type="text" placeholder="Your Name">
+<input type="tel" placeholder="Mobile Number">
+<input type="email" placeholder="Email">
+<textarea rows="4" placeholder="Message"></textarea>
+
+<button>Send Message</button>
+
+</div>
+
+<h3 style="margin-top:20px;">📍 Live Location</h3>
+
+<iframe
+src="https://maps.google.com/maps?q=25.26601,81.7198935&z=16&output=embed">
+</iframe>
+
+</div>
+
+</section>
+
+<a href="https://wa.me/919956971362" class="whatsapp">💬</a>
+
+<footer>
+
+<h2>AKASH DAIRY FARM</h2>
+
+<p>Rigwan Bara, Jasra, Prayagraj - 212107</p>
+
+<p>Mobile: 9956971362</p>
+
+</footer>
+
+</body>
+</html>
